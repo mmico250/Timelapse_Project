@@ -15,10 +15,13 @@ import os
 folder= "Timelapse_Pictures"
 #path = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Pictures')
 
+#get path where program is called from
 path = os.getcwd()
 
+#add a folder to where the program was called from
 path = path + "\\" + folder
 
+#if folder doesnt exist, create it
 if os.path.isdir(path):
     # directory exists
     path = path
@@ -27,6 +30,7 @@ else:
 print(path)
 webcam = cv2.VideoCapture(0)
 
+#check if succesful capture, then save the image as .jpg
 ret, frame = webcam.read()
 if ret:
     timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
