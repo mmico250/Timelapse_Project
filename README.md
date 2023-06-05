@@ -1,6 +1,5 @@
 # Timelapse_Project
-Python program that captures image and saves it at the location the program is run from. The goal of the project is to automate the process using the windows task scheduler to call it at regular time intervals. The resulting images can then be compiled into a timelapse
-
+Python program that captures image, creates a folder and saves it at that folder in the location where program is run from. The goal of the project is to automate the process using the windows task scheduler to call it at regular time intervals. The resulting images can then be compiled into a timelapse
 Steps
 1. Install Python: If you don't have Python installed on your computer, download and install the latest version from the official Python website (https://www.python.org/downloads/). Make sure to select the option to add Python to your system's PATH during the installation process.
 2. Install OpenCV: Open a command prompt or terminal and run the following command to install the OpenCV library using pip, the Python package installer:
